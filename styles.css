@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+* {
+    font-family: "Poppins", sans-serif;
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+    color: #444;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: #eee;
+}
+
+.sr-only {
+    display: block;
+}
+
+.main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.main-nav a {
+    font-size: 1.5rem;
+    padding: .75em;
+    display: flex;
+    align-items: center;
+    opacity: 0.7;
+}
+.main-nav a:hover {
+    opacity: 1;
+}
+
+.main-container {
+    max-width: 80vw;
+    min-height: 50vh;
+    margin: 100px auto 0;
+    background: white;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0px 2px 4px rgb(0 0 0 /0.2);
+    padding-bottom: 2em;
+}
+.main-heading {
+    text-align: center;
+    /* margin-bottom: 1.25em; */
+    border-bottom: 1px solid rgb(0 0 0 /0.2);
+}
+
+img {
+    width: 300px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 2px solid rgb(0 0 0 /0.2);
+}
+
+a {
+    text-decoration: none;
+}
+
+.recipe-list {
+    list-style: none;
+    margin: 0 auto;
+    width: max-content;
+    display: flex;
+    gap: 1em;
+}
+
+.recipe-link {
+    display: flex;
+    align-items: center;
+    min-width: 200px;
+    box-shadow: 0px 1px 2px rgb(0 0 0 /0.2);
+    border: 1px solid rgb(0 0 0 /0.2);
+    border-radius: 5em;
+}
+
+.recipe-link span {
+    margin-left: 1em;
+}
+
+.recipe-link:hover {
+    box-shadow: 0px 1px 4px rgb(0 0 0 /0.4);
+    border: 1px solid rgb(0 0 0 /0.5);
+}
+
+.recipe-link:hover img {
+    transform: scale(1.2);
+    border: 2px solid rgb(0 0 0 /0.5);
+}
+
+.recipe-link img {
+    width: 60px;
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+}
+
+.ingredients-directions {
+    list-style: bold;
+}
+
+.ingredients-directions li {
+    margin-bottom: 1em;
+}
